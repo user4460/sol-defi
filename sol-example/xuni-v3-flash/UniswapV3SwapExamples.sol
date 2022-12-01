@@ -11,7 +11,6 @@ contract UniswapV3SwapExamples {
         uint24 poolFee,
         uint amountIn
     ) external returns (uint amountOut) {
-        //ierc20とは、ERC20トークンのインターフェース。
         IERC20(tokenIn).transferFrom(msg.sender, address(this), amountIn);
         IERC20(tokenIn).approve(address(router), amountIn);
 

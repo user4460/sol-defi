@@ -5,7 +5,6 @@ pragma solidity ^0.8.13;
 // https://github.com/optionality/clone-factory/blob/master/contracts/CloneFactory.sol
 contract MinimalProxy {
 
-  //cloneとは、コントラクトのコピーを作成すること
     function clone(address target) external returns (address result) {
         // convert address to 20 bytes
         bytes20 targetBytes = bytes20(target);

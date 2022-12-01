@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-//interfaceとは、コントラクトの関数の定義を行うことができる
 interface IUniswapV2Callee {
     function uniswapV2Call(
         address sender,
@@ -11,7 +10,6 @@ interface IUniswapV2Callee {
     ) external;
 }
 
-//uniswapv2flashswapとは、uniswapv2のflashswapを行うことができる
 
 contract UniswapV2FlashSwap is IUniswapV2Callee {
     address private constant UNISWAP_V2_FACTORY =

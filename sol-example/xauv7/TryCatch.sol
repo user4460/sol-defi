@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
-// try catchとは、エラーが発生した場合に、そのエラーをキャッチして、処理を継続することができる機能
 // External contract used for try / catch examples
 contract Foo {
     address public owner;

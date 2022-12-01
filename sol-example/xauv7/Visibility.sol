@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-//visibillityとは、関数や変数の公開範囲を指定する機能
 contract Base {
     // Private function can only be called
     // - inside this contract
