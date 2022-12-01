@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-//abidecodeとは、ABIをデコードすることで、関数の呼び出しやトランザクションのデータを読み取ることができる。
+
 contract AbiDecode {
     struct MyStruct {
         string name;

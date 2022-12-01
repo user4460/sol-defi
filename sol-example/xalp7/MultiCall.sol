@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-//multicallとは、複数のコントラクトの関数を一度に呼び出すことができる
+
 contract MultiCall {
     function multiCall(address[] calldata targets, bytes[] calldata data)
         external

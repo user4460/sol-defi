@@ -1,17 +1,13 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8;
+pragma solidity ^0.8.13;
 
-//stakingrewardsとは、ステーキング報酬を支払う機能
 contract StakingRewards {
-    //statingtokenとは、ユーザーがステーキングするトークンのこと
     IERC20 public immutable stakingToken;
-    //rewardsTokenとは、ステーキングしたトークンに対して配布されるトークンのこと
     IERC20 public immutable rewardsToken;
 
     address public owner;
 
     // Duration of rewards to be paid out (in seconds)
-    // durationとは、報酬を支払う期間のこと。
     uint public duration;
     // Timestamp of when the rewards finish
     uint public finishAt;

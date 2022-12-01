@@ -1,9 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.13;
 
-//cpammとは、Constant Product AMMと呼ばれる、一般的なAMMの実装である。
 contract CPAMM {
-    //ierc20とは、erc20トークンの標準インターフェースである。
 
     IERC20 public immutable token0;
     IERC20 public immutable token1;
@@ -68,7 +66,6 @@ contract CPAMM {
         _update(token0.balanceOf(address(this)), token1.balanceOf(address(this)));
     }
 
-    //addLiquiditiyとは、流動性を追加する関数である。
     function addLiquidity(uint _amount0, uint _amount1) external returns (uint shares) {
         token0.transferFrom(msg.sender, address(this), _amount0);
         token1.transferFrom(msg.sender, address(this), _amount1);
